@@ -14,6 +14,6 @@
 	GuestbookDao guestBookDao = new GuestbookDao();
 	guestBookDao.guestBookInsert(personVo);
 		
-	response.sendRedirect("list.jsp");
+	response.sendRedirect("list.jsp"); 
 	
 %>

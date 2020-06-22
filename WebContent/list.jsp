@@ -56,7 +56,7 @@ System.out.println(personList.toString());
 	<table border="1" width="565">
 		<tbody>
 			<tr>
-				<td width="20"><%=personVo.getNo()%></td>
+				<td width="20"><%=personVo.getNo()%></td> 
 				<td width="80"><%=personVo.getName()%></td>
 				<td width=auto><%=personVo.getDate()%></td>
 				<td width="45"><button type="button">삭제</button></td>

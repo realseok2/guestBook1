@@ -61,7 +61,7 @@ public class GuestbookDao {
 
 	// 게시물 추가----------------------------------------------------------------------------------------
 
-	public void guestBookInsert(PersonVo personVo) {
+	public void guestBookInsert(PersonVo personVo) { 
 		getConnect();
 
 		try {

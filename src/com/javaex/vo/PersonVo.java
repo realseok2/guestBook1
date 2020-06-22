@@ -4,7 +4,7 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		필드
 
-	private int No; // 게시물 코드
+	private int No; // 게시물 코드 
 	private String Name; // 작성자 이름
 	private String Pw; // 작성글 패스워드
 	private String Content; // 작성글 내용
