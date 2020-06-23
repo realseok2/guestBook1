@@ -4,7 +4,7 @@
 <%@	page import="com.javaex.vo.PersonVo" %>
 
 <%
-	request.setCharacterEncoding("UTF-8");	
+	request.setCharacterEncoding("UTF-8");
 
 	String name 	= request.getParameter("name");
 	String pw 		= request.getParameter("password");
@@ -14,6 +14,6 @@
 	GuestbookDao guestBookDao = new GuestbookDao();
 	guestBookDao.guestBookInsert(personVo);
 		
-	response.sendRedirect("list.jsp"); 
+	response.sendRedirect("addList.jsp"); 
 	
 %>

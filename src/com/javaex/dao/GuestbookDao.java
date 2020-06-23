@@ -86,18 +86,20 @@ public class GuestbookDao {
 
 	// 게시물 삭제----------------------------------------------------------------------------------------
 
-	public void guestBookDelete(int no) {
+	public void guestBookDelete(int no, String pw) {
 		getConnect();
 
 		try {
 
 			String query = "";
 			query += " delete from	guestbook ";
-			query += " where		no = ? ";
+			query += " where		no 			= ? ";
+			query += " and			password 	= ? ";
 
 			pstmt = conn.prepareStatement(query);
 
 			pstmt.setInt(1, no);
+			pstmt.setString(2, pw);
 
 			int count = pstmt.executeUpdate();
 

@@ -4,7 +4,7 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		필드
 
-	private int No; // 게시물 코드 
+	private int No; // 게시물 코드
 	private String Name; // 작성자 이름
 	private String Pw; // 작성글 패스워드
 	private String Content; // 작성글 내용
@@ -12,10 +12,22 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		생성자
 
+	public PersonVo(int no, String pw) {
+		this.No = no;
+		this.Pw = pw;
+	}
+
 	public PersonVo(String name, String pw, String content) {
 		this.Name = name;
 		this.Pw = pw;
 		this.Content = content;
+	}
+
+	public PersonVo(String name, String pw, String content, String date) {
+		this.Name = name;
+		this.Pw = pw;
+		this.Content = content;
+		this.Date = date;
 	}
 
 	public PersonVo(int no, String name, String pw, String content, String date) {
