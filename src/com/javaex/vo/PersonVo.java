@@ -23,13 +23,6 @@ public class PersonVo {
 		this.Content = content;
 	}
 
-	public PersonVo(String name, String pw, String content, String date) {
-		this.Name = name;
-		this.Pw = pw;
-		this.Content = content;
-		this.Date = date;
-	}
-
 	public PersonVo(int no, String name, String pw, String content, String date) {
 		this.No = no;
 		this.Name = name;
@@ -82,6 +75,15 @@ public class PersonVo {
 
 //------------------------------------------------------------------------------------		일반 메소드
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //------------------------------------------------------------------------------------		toString()
 
 	@Override

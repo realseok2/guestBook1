@@ -20,20 +20,31 @@ public class GuestbookDao {
 
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
-	private String Id = "webdb";
+	private String id = "webdb";
 	private String pw = "webdb";
 
 //----------------------------------------------------------------------------------------------			생성자
 
+	
+	
+	
+	
+	
 //----------------------------------------------------------------------------------------------			getter, setter
 
+	
+	
+	
+	
+	
+	
 //----------------------------------------------------------------------------------------------			일반 메소드
 
 	// Connect 얻어오기
 	private void getConnect() {
 		try {
 			Class.forName(driver);
-			conn = DriverManager.getConnection(url, Id, pw);
+			conn = DriverManager.getConnection(url, id, pw);
 //			System.out.println("접속 성공");
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);
